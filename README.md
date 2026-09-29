@@ -19,21 +19,23 @@ The software logic runs on a continuous loop using basic "If/Else" rules:
 * **ELSE (The spot is empty):** The sensor measures a clear distance to the empty floor (more than 200 cm away). The system switches the overhead light to **Green**, signaling that the spot is available.
 
 ## 4. Next Steps for My Learning Tracker
-Because I do not know any programming languages yet, my goal as I start my studies is to learn basic **C++ or Python** so I can translate this simple physical logic into actual lines of code. I want to learn how to wire a real physical sensor to a microcontroller and write the basic script that triggers the lights automatically.
+I have already started practicing by writing a simple Python logic script for this project. My next step before starting university is to learn how to connect this code to real physical hardware. I want to learn how to wire an actual distance sensor to a microcontroller chip so that a real car can trigger the lights in person, moving my project from a software simulation to a physical device.
 
 ## 5. System Logic Workflow
 This diagram shows how data flows when a car interacts with the sensor:
 
+```text
 [ Car Enters Parking Space ]
-│
-▼
+            │
+            ▼
 [ Distance Sensor Measures < 50cm ]
-│
-▼
+            │
+            ▼
 [ Microcontroller Runs "IF" Rule ]
-│
-▼
+            │
+            ▼
 [ Overhead Light Switches to RED ]
+```
 
 ## 6. Python Logic Prototype
 I have written a basic Python script to demonstrate how the "If/Else" distance parameters operate computationally:
