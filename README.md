@@ -34,3 +34,29 @@ This diagram shows how data flows when a car interacts with the sensor:
 │
 ▼
 [ Overhead Light Switches to RED ]
+
+## 6. Python Logic Prototype
+I have written a basic Python script to demonstrate how the "If/Else" distance parameters operate computationally:
+
+```python
+# --- Smart Urban Parking System: Core Logic Simulation ---
+sensor_distance_cm = 45 
+
+if sensor_distance_cm < 50:
+    bay_status = "Occupied (1)"
+    overhead_light = "RED"
+    print("System Status: A vehicle has entered the parking space.")
+else:
+    bay_status = "Available (0)"
+    overhead_light = "GREEN"
+    print("System Status: The parking space is empty.")
+
+print("--------------------------------------------------")
+print(f"Sensor Reading: {sensor_distance_cm} cm")
+print(f"Parking Spot Status: {bay_status}")
+print(f"Overhead Indicator Light: {overhead_light}")
+print("--------------------------------------------------")
+```
+
+### Interactive Version
+You can run and test this code on my Kaggle Notebook here: **(https://www.kaggle.com/code/nouroth/smart-urban-parking-logic)**
