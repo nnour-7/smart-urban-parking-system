@@ -42,24 +42,33 @@ This diagram shows how data flows when a car interacts with the sensor:
 I have written a simple Python script to demonstrate how the "If/Else" distance parameters operate computationally:
 
 ```python
-# --- Smart Urban Parking System: Core Logic Simulation ---
+# Smart Urban Parking System
 
-# 1. Define the input variables
-sensor_distance_cm = 45 
+# 1. Determine parking spot availability
+user_entry = input("Is the parking spot occupied? Yes/No:").lower()
 
-# 2. Run the decision-making logic
+if user_entry == "yes":
+    sensor_distance_cm < 50
+
+else:
+    sensor_distance_cm = 210
+
+# 2. Run the decision-making logic using an If/Else statement
 if sensor_distance_cm < 50:
+    # This block runs ONLY if a car is close to the sensor
     bay_status = "Occupied (1)"
     overhead_light = "RED"
     structural_light_power = "100% (Full Brightness for Safety)"
     print("System Status: A vehicle has entered the parking space.")
+
 else:
+    # This block runs if the sensor measures a clear path to the floor
     bay_status = "Available (0)"
     overhead_light = "GREEN"
     structural_light_power = "20% (Dimmed to Conserve Energy)"
     print("System Status: The parking space is empty.")
 
-# 3. Output the final physical and energy results
+# 3. Output the final physical results of the system
 print("--------------------------------------------------")
 print(f"Sensor Reading: {sensor_distance_cm} cm")
 print(f"Parking Spot Status: {bay_status}")
