@@ -48,7 +48,7 @@ I have written a simple Python script to demonstrate how the "If/Else" distance 
 user_entry = input("Is the parking spot occupied? Yes/No:").lower()
 
 if user_entry == "yes":
-    sensor_distance_cm < 50
+    sensor_distance_cm = 50
 
 else:
     sensor_distance_cm = 210
