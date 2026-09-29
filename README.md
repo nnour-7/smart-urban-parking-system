@@ -2,7 +2,7 @@
 A conceptual computer engineering design for a sensor-driven, energy-efficient smart parking system.
 
 ## 1. Project Overview
-The **Smart Urban Parking & Micro-Grid System (SUPM)** is a structural concept that reimagines standard parking garages. Instead of just being passive concrete storage spaces, this system turns a parking structure into an active node that tracks cars and manages lighting energy efficiently
+The **Smart Urban Parking (SUP)** is a structural concept that reimagines standard parking garages. Instead of just being passive concrete storage spaces, this system turns a parking structure into an active node that tracks cars and manages lighting energy efficiently
 
 ## 2. Core Operational Goals
 To make a parking garage smart, the engineering logic must solve three distinct problems:
